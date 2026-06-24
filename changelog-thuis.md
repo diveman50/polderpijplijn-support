@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 4.72 — 2026-06-24
+- New "Forecast accuracy" chart in the solar panel: predicted daily total vs. measured generation as a percentage correct over the last 28 days. It fills in immediately with estimates reconstructed from logged data; those estimates drop out as real day-ahead predictions accumulate.
+- The day's solar forecast is now frozen at a fixed early-morning reference moment via an overnight background refresh, so it no longer depends on when you first open the app (falls back to freezing on first open when background refresh is unavailable).
+- About screen: added a note that no rights can be derived from the accuracy of the data, and that a longer HomeWizard history (ideally more than a year, because of the seasons) improves accuracy. Replaced the Forecast.Solar mention with the built-in self-learning forecast.
+
 ## 4.71 — 2026-06-23
 - Maintenance: version bump with a regenerated Info.plist.
 
