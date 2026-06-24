@@ -3,6 +3,9 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 4.73 — 2026-06-24
+- The "Forecast accuracy" chart is now a line graph: predicted daily total vs. measured generation in kWh. The predicted line is dashed where it's reconstructed from history (an estimate) and solid once real, pre-frozen forecasts kick in — so you can see from when actual predictions count.
+
 ## 4.72 — 2026-06-24
 - New "Forecast accuracy" chart in the solar panel: predicted daily total vs. measured generation as a percentage correct over the last 28 days. It fills in immediately with estimates reconstructed from logged data; those estimates drop out as real day-ahead predictions accumulate.
 - The day's solar forecast is now frozen at a fixed early-morning reference moment via an overnight background refresh, so it no longer depends on when you first open the app (falls back to freezing on first open when background refresh is unavailable).
