@@ -3,6 +3,10 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 4.74 — 2026-06-25
+- The dashboard's solar "expected today" tile now matches the figure in the solar detail screen. It previously dropped to just the energy produced so far whenever the live forecast fetch came back empty; it now falls back to the cached forecast like the detail view already did.
+- The "Forecast accuracy" line is now solid from the first real (pre-frozen) prediction onward, even when only one real day exists yet — so the day you started getting genuine predictions no longer shows up as a dashed endpoint.
+
 ## 4.73 — 2026-06-24
 - The "Forecast accuracy" chart is now a line graph: predicted daily total vs. measured generation in kWh. The predicted line is dashed where it's reconstructed from history (an estimate) and solid once real, pre-frozen forecasts kick in — so you can see from when actual predictions count.
 
