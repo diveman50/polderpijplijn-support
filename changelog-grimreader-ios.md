@@ -3,6 +3,19 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.76 — 2026-06-25
+
+- **Schrijversinfo bij WebDAV-boeken:** open je een boek van een WebDAV-server, dan
+  zoekt de app de schrijver op (Wikipedia) en toont een portret met een korte bio.
+  Die gegevens worden bewaard in een eigen `authors.yaml` op de server zelf, zodat ze
+  bij je bibliotheek horen en op al je toestellen beschikbaar zijn — en offline in een
+  lokale cache. Op een alleen-lezen share blijft het bij de lokale cache.
+- **Overal hetzelfde openen:** tik nu op de cover van een boek om het te openen — bij
+  je eigen boeken en WebDAV-boeken net zoals bij de Grimmory-bibliotheek.
+- **Sneller scannen van grote WebDAV-bibliotheken:** de app probeert de hele mappenboom
+  in één keer op te halen. Staat je server dat niet toe, dan valt hij automatisch terug
+  op de vertrouwde map-voor-map-scan.
+
 ## 1.75 — 2026-06-25
 
 - **Alle boeken van een server in één overzicht:** elke WebDAV-server toont nu een
