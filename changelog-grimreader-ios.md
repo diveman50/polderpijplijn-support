@@ -3,6 +3,17 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.75 — 2026-06-25
+
+- **Alle boeken van een server in één overzicht:** elke WebDAV-server toont nu een
+  raster met álle boeken uit de hele mappenboom, mét cover en titel/auteur. De lijst
+  wordt op je toestel onthouden zodat hij niet elke keer opnieuw hoeft te scannen;
+  met "Vernieuwen" zoek je opnieuw, en "Bladeren per map" blijft beschikbaar.
+- **Eén plek voor al je servers:** in Instellingen staan je Grimmory-bibliotheek en
+  WebDAV-servers nu samen onder "Servers". Naast elke server zie je of hij bereikbaar
+  is; bij een WebDAV-server geeft een potlood aan dat de app er een eigen mapje voor
+  metadata mag bijhouden. Toevoegen gaat via één knop met de keuze Grimmory of WebDAV.
+
 ## 1.74 — 2026-06-25
 
 - **Lees boeken van een WebDAV-server:** voeg in Instellingen één of meer WebDAV-
