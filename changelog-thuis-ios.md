@@ -3,6 +3,9 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 4.77 — 2026-06-25
+- Climate screen now shows only real combined sensors: an entry appears only when a sensor reports both temperature and humidity, and only actual `sensor.*` measurements are considered. This removes the clutter from devices like the SONOFF SNZB-02D, which expose extra configuration/threshold entities (comfort min/max temperature, comfort humidity limits, humidity compensation) and from standalone temperature-only or humidity-only sensors.
+
 ## 4.76 — 2026-06-25
 - Climate screen: the local weather for your location (the outdoor temperature sensor plus the Home Assistant weather entity — condition, temperature and humidity) now shows in a separate "Location" card at the top, instead of being mixed in with the room sensors. Only your own temperature and humidity sensors remain in the indoor/outdoor room lists.
 
