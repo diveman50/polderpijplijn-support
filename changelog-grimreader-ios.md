@@ -3,6 +3,17 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.72 — 2026-06-25
+
+- **You're back where you stopped reading:** when you leave a book and come back,
+  it now reliably reopens on the exact page you left off. Before, it could land a
+  page or two earlier — for PDFs the very last page turn wasn't always saved before
+  closing, and for EPUBs the restored page could get nudged back while the page was
+  still re-laying out.
+- **Tap the cover to open a book:** on a book's page you can now tap the cover image
+  itself to start reading (or listening, or to download it first) — the same as the
+  button below it.
+
 ## 1.71 — 2026-06-24
 
 - **A new cover stays put when you go back:** after you change the cover of a book
