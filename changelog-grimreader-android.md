@@ -3,6 +3,14 @@
 Alle noemenswaardige wijzigingen per release. Nieuwste eerst.
 Versies komen overeen met de `vX.Y`-tags en `versionName`.
 
+## 1.2 — 2026-06-25
+
+- **Mijn boeken (offline):** een nieuw "Mijn boeken"-icoon bovenin opent je
+  gedownloade boeken. Die lijst werkt volledig offline — met cover, titel en
+  auteur — en je opent ze direct in de lezer, ook zonder verbinding met je server.
+- **Zoeken en verwijderen:** zoek in je gedownloade boeken op titel of auteur, en
+  verwijder een boek van je toestel met een lange druk.
+
 ## 1.1 — 2026-06-25
 
 - **EPUB's openen werkt weer:** een boek openen gaf een laadfout
