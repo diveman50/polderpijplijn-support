@@ -3,6 +3,16 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.74 — 2026-06-25
+
+- **Lees boeken van een WebDAV-server:** voeg in Instellingen één of meer WebDAV-
+  servers toe (NAS, Nextcloud e.d.) met gebruikersnaam en wachtwoord, blader door de
+  mappen en download EPUB- en PDF-boeken. Het wachtwoord staat veilig in de Keychain,
+  en met "Verbinding testen" controleer je de server meteen.
+- **Covers uit de bestanden zelf:** voor WebDAV-downloads haalt de app de cover uit
+  het EPUB of toont de eerste PDF-pagina. De boeken verschijnen bij "Mijn boeken" en
+  blijven offline beschikbaar, net als catalogus-downloads.
+
 ## 1.73 — 2026-06-25
 
 - **De tekst springt niet meer als je het paneel opent:** tik je tijdens het lezen
