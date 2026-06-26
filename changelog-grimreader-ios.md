@@ -3,6 +3,15 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.87 — 2026-06-26
+
+- **Vertalen vertaalt nu alleen de huidige pagina:** voorheen ging de hele
+  hoofdstuktekst eronderdoor, wat lang duurde. De app pakt nu precies de tekst die
+  je op het scherm ziet.
+- **Voortgangsbalk in plaats van een tollend wieltje:** je ziet nu hoe ver het
+  vertalen is (met percentage), en bij de eerste keer dat een taalpakket nog
+  gedownload moet worden de melding "Taalpakket voorbereiden…".
+
 ## 1.86 — 2026-06-26
 
 - **OPDS-catalogi met inloggen:** vereist je eigen OPDS-bron een gebruikersnaam en
