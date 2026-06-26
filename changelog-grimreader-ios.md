@@ -3,6 +3,12 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.94 — 2026-06-26
+
+- **Tijdelijke diagnose terug in de vertaalweergave:** toont de interne
+  leestoestand (o.a. scroll-modus, pagina, kolommen, lengte) om te achterhalen
+  waarom het vertalen nog het hele hoofdstuk pakt. Wordt na de fix weer verwijderd.
+
 ## 1.93 — 2026-06-26
 
 - **Vertalen pakt nu correct de huidige pagina, ook met twee kolommen:** de
