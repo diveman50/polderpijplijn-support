@@ -3,6 +3,18 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.86 — 2026-06-26
+
+- **OPDS-catalogi met inloggen:** vereist je eigen OPDS-bron een gebruikersnaam en
+  wachtwoord, dan kun je die nu invullen bij de catalogus (Instellingen → Servers). De
+  app stuurt ze mee bij bladeren en downloaden; het wachtwoord staat veilig in de
+  Keychain. Vraagt een bron om inloggen en heb je niets ingevuld, dan zie je een
+  duidelijke melding in plaats van een onbekende fout. https blijft vereist.
+- **Vertalen (proef) robuuster:** de brontaal wordt nu netjes uit de boekgegevens of de
+  tekst afgeleid (ook als de metadata een afwijkende taalcode bevat), en bij een niet-
+  ondersteunde talencombinatie krijg je een melding in plaats van een eindeloos
+  draaiend wieltje.
+
 ## 1.85 — 2026-06-26
 
 - **Downloaden van eigen OPDS-catalogi werkt nu:** boeken van een zelf-gehoste OPDS-bron
