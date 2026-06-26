@@ -3,6 +3,12 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.97 — 2026-06-26
+
+- **Diagnose-weergave verwijderd:** nu de eerste tik op Vertalen betrouwbaar de
+  juiste paginatekst pakt, is de tijdelijke "Diagnose (tijdelijk)"-sectie en de
+  bijbehorende interne meet-code weggehaald.
+
 ## 1.96 — 2026-06-26
 
 - **Eerste tik op Vertalen pakt nu meteen de juiste paginatekst:** het
