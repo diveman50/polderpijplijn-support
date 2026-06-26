@@ -3,6 +3,18 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.83 — 2026-06-26
+
+- **Eigen OPDS-catalogi:** voeg in Instellingen je eigen OPDS-bron toe (bijvoorbeeld een
+  Calibre-Web-server of een andere OPDS-feed). Die verschijnen onder Ontdek naast de
+  ingebouwde bronnen, met bladeren, zoeken en downloaden.
+- **VoiceOver houdt je leespositie beter vast:** schakel je VoiceOver in tijdens het lezen,
+  dan blijft de lezer nu staan waar je was in plaats van naar het begin van het hoofdstuk te
+  springen.
+- **Vertalen (proef):** op iOS 18 en nieuwer kun je een hoofdstuk on-device laten vertalen
+  via een nieuwe knop in de leesbalk. Dit is een eerste experiment — de tekst wordt zonder
+  opmaak getoond.
+
 ## 1.82 — 2026-06-26
 
 - **Swipen om te bladeren:** veeg in de EPUB-lezer naar links voor de volgende pagina en
