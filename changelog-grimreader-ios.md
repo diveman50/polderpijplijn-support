@@ -3,6 +3,14 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.92 — 2026-06-26
+
+- **Vertalen pakt nu betrouwbaar de huidige pagina, ook bij de eerste tik:** de
+  oorzaak was een timing-race — bij de eerste tik was de pagina-uitlezing nog niet
+  gereed, waardoor hij leeg terugkwam en op het hele hoofdstuk terugviel (traag). De
+  app probeert de zichtbare paginatekst nu kort opnieuw tot die beschikbaar is.
+- **Tijdelijke diagnose verwijderd** nu de oorzaak gevonden is.
+
 ## 1.91 — 2026-06-26
 
 - **Diagnose aangescherpt:** de tijdelijke diagnose-info wordt nu synchroon vastgelegd
