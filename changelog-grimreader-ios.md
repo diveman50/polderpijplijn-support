@@ -3,6 +3,16 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.85 — 2026-06-26
+
+- **Downloaden van eigen OPDS-catalogi werkt nu:** boeken van een zelf-gehoste OPDS-bron
+  (bijvoorbeeld Calibre-Web) die over http draait, gaven een beveiligingsfout. De app
+  staat nu verbindingen met je eigen opgegeven servers toe, net als bij je NAS.
+- **OPDS-catalogi bij je servers:** je eigen OPDS-bronnen voeg je nu toe onder Instellingen
+  → Servers, samen met je Grimmory- en WebDAV-servers, via één "Server toevoegen"-knop.
+- **"Ontdek" heet nu "Internet boeken":** duidelijker waar je gratis boeken van het
+  internet vindt.
+
 ## 1.84 — 2026-06-26
 
 - **Je blijft langer ingelogd op je Grimmory-server:** een tijdelijke serverhapering
