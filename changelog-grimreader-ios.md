@@ -3,6 +3,13 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.98 — 2026-06-26
+
+- **Onderhoud opgeschoond:** de opties "Boeken zonder auteur aanvullen" en "Boeken
+  zonder cover aanvullen" zijn verwijderd (werkten nog niet betrouwbaar).
+- **Onder de motorkap:** compiler-waarschuwingen weggewerkt (actor-isolatie in de
+  audioboekspeler en wat ongebruikte code), zodat de build schoon is en Swift 6-klaar.
+
 ## 1.97 — 2026-06-26
 
 - **Diagnose-weergave verwijderd:** nu de eerste tik op Vertalen betrouwbaar de
