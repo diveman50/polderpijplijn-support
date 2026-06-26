@@ -3,6 +3,13 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.91 — 2026-06-26
+
+- **Diagnose aangescherpt:** de tijdelijke diagnose-info wordt nu synchroon vastgelegd
+  vóór het ophalen van de paginatekst, zodat zichtbaar wordt of de uitlees-koppeling
+  tussen de lezer en de vertaalweergave wel aankomt. Helpt om te bepalen waarom de
+  paginatekst leeg bleef. Wordt na de fix weer verwijderd.
+
 ## 1.90 — 2026-06-26
 
 - **Tijdelijke diagnose in de vertaalweergave:** toont onder "Diagnose (tijdelijk)"
