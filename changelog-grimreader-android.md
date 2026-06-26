@@ -3,6 +3,17 @@
 Alle noemenswaardige wijzigingen per release. Nieuwste eerst.
 Versies komen overeen met de `vX.Y`-tags en `versionName`.
 
+## 1.5 — 2026-06-26
+
+- **Strips lezen (CBZ/CBR):** boeken in stripformaat (cbz, cbr, cb7) open je nu
+  rechtstreeks in een nieuwe strip-lezer. De pagina's worden van je server
+  gestreamd en je leespositie wordt onthouden.
+- **Instellingen:** een nieuw tandwiel bovenin opent een instellingenscherm met je
+  account (server, gebruiker, uitloggen), leesopties en taalkeuze.
+- **Leesopties:** stel voor EPUB-boeken de lettergrootte, regelafstand en een
+  lees-thema in (Licht, Sepia, Donker of Hoog contrast).
+- **Taalkeuze:** kies de taal van de app (Nederlands of Engels) los van je toestel.
+
 ## 1.4 — 2026-06-26
 
 - **Engelstalige interface:** de app spreekt nu ook Engels. De teksten volgen de
