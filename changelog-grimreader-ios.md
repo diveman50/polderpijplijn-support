@@ -3,6 +3,15 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 1.95 — 2026-06-26
+
+- **Vertalen leest de pagina nu zonder reflow-race uit:** de uitlezing zette vlak
+  vóór het meten de pagina-transform tijdelijk uit en mat soms op de oude posities,
+  waardoor de eerste tikken leeg terugkwamen en hij op het hele hoofdstuk terugviel.
+  De transform wordt nu niet meer aangeraakt; de paginapositie wordt rechtstreeks
+  uit de live-transform berekend, robuust voor 1 én 2 kolommen. (Diagnose staat nog
+  één build aan om dit te bevestigen.)
+
 ## 1.94 — 2026-06-26
 
 - **Tijdelijke diagnose terug in de vertaalweergave:** toont de interne
