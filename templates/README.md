@@ -66,6 +66,8 @@ Use the **PostScript name** of the font (see [`fonts.md`](fonts.md) for the full
 
 If a font name is not found, iOS falls back to the system font.
 
+**Special value:** `"opendyslexic"` activates the OpenDyslexic font bundled in the app. When used as `font_body`, Grim Reader automatically switches the EPUB reader to OpenDyslexic when this template is selected. See [`fonts.md`](fonts.md) for details and a ready-to-use example.
+
 ### Images
 
 | Field | Type | Description |

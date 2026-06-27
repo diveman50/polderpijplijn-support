@@ -9,6 +9,43 @@ All fonts built into iOS 17. Use the **PostScript name** in `template.json`. If 
 > - Humanist serif: `IowanOldStyle-Roman`, `Optima-Regular`
 > - Monospace: `Menlo-Regular`, `CourierNewPSMT`
 > - Decorative heading: `Zapfino`, `SnellRoundhand`, `Copperplate`
+> - Dyslexia-friendly: `opendyslexic` ← **bundled, not an iOS font** (see below)
+
+---
+
+## Special / bundled fonts
+
+These are **not** iOS system fonts — they are included in the Grim Reader app itself. Use the exact value shown; no PostScript name lookup is done for these.
+
+| Value | Font | License | Notes |
+|---|---|---|---|
+| `"opendyslexic"` | OpenDyslexic | SIL Open Font License 1.1 | Designed to improve readability for readers with dyslexia. When set as `font_body`, Grim Reader automatically activates OpenDyslexic in the EPUB reader when this template is selected. |
+
+**Example `template.json` for a dyslexia-friendly template:**
+
+```json
+{
+  "id": "dyslexia-friendly",
+  "name": "Dyslexia Friendly",
+  "description": "High contrast colors and OpenDyslexic font",
+  "author": "Grim Reader",
+  "color_primary":    "#0055AA",
+  "color_secondary":  "#006600",
+  "color_background": "#FFFDE7",
+  "color_text":       "#111111",
+  "color_accent":     "#0055AA",
+  "color_muted":      "#666666",
+  "font_heading": "opendyslexic",
+  "font_body":    "opendyslexic",
+  "font_mono":    "Menlo-Regular",
+  "image_background":   null,
+  "image_header":       null,
+  "image_footer":       null,
+  "image_book_card_bg": null,
+  "corner_radius": 14,
+  "shadow_radius": 4
+}
+```
 
 ---
 
