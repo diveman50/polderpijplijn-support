@@ -92,6 +92,9 @@ Keep the main subject **centered** — edges are cropped on smaller screens.
 |---|---|---|---|
 | `corner_radius` | number | yes | 8 – 20 |
 | `shadow_radius` | number | yes | 0 – 10 |
+| `card_opacity` | number | no | 0.0 – 1.0 (default: 1.0) |
+
+`card_opacity` controls the transparency of the book-section panels ("Continue reading", "Recently added", etc.). Set it below `1.0` to let a background image show through — values around `0.5 – 0.8` work well.
 
 ---
 

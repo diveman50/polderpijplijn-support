@@ -21,5 +21,6 @@
   "image_book_card_bg": null,
 
   "corner_radius": 16,
-  "shadow_radius": 6
+  "shadow_radius": 6,
+  "card_opacity": 0.75
 }
