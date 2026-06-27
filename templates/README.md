@@ -1,168 +1,101 @@
 # Grim Reader Templates
 
-Een template past de look-and-feel van Grim Reader aan: kleuren, fonts en achtergrondafbeeldingen. Templates worden verspreid als `.grimtemplate`-bestand (een gewone zip met een andere extensie).
+A template changes the look and feel of Grim Reader: colors, fonts, and background images. Templates are distributed as `.grimtemplate` files (a standard zip archive with a custom extension).
 
-## Installeren
+## Installing a template
 
-1. Stuur het `.grimtemplate`-bestand naar je iPhone/iPad (AirDrop, Mail, Bestanden).
-2. Tik op het bestand → **Open met Grim Reader**.
+**Option 1 — Share sheet / Files app**
+Send the `.grimtemplate` file to your iPhone or iPad via AirDrop, Mail, or Files, then tap it and choose **Open with Grim Reader**.
 
-Of via de app: **Instellingen → Weergave → Template importeren**.
+**Option 2 — In-app import**
+Go to **Settings → Appearance → Import template** and pick the file.
 
----
-
-## Bestandsstructuur
-
-```
-mijntemplate.grimtemplate   ← zip-bestand
-├── template.json            ← verplicht
-├── background.jpg           ← optioneel
-├── header.png               ← optioneel
-└── snowflakes.png           ← optioneel
-```
-
-De afbeeldingen mogen elke naam hebben; je verwijst ernaar vanuit `template.json`.
+The template is installed immediately and selected automatically.
 
 ---
 
-## template.json
+## File structure
 
-Zie [`voorbeeld.json`](voorbeeld.json) voor een kant-en-klaar startpunt.
+```
+mytemplate.grimtemplate      ← zip archive
+├── template.json            ← required
+├── background.jpg           ← optional
+├── header.png               ← optional
+└── footer.png               ← optional
+```
 
-| Veld | Type | Verplicht | Omschrijving |
+Image files can have any name; you reference them by filename from `template.json`. The `template.json` file may be in the root of the zip or inside a single subdirectory — both work.
+
+---
+
+## template.json reference
+
+See [`example.json`](example.json) for a ready-to-use starting point.
+
+### Identity
+
+| Field | Type | Required | Description |
 |---|---|---|---|
-| `id` | string | ja | Unieke identifier, alleen kleine letters en koppeltekens |
-| `name` | string | ja | Naam zoals getoond in de app |
-| `description` | string | ja | Korte omschrijving |
-| `author` | string | ja | Naam van de maker |
-| `color_primary` | hex | ja | Hoofdkleur (sectietitels, highlights) |
-| `color_secondary` | hex | ja | Secundaire kleur |
-| `color_background` | hex | ja | Achtergrondkleur van het startscherm |
-| `color_text` | hex | ja | Standaard tekstkleur |
-| `color_accent` | hex | ja | Accentkleur (knoppen, links, toggles) |
-| `color_muted` | hex | ja | Gedempte kleur voor subtekst |
-| `font_heading` | string | ja | Font voor koppen (zie lijst hieronder) |
-| `font_body` | string | ja | Font voor lopende tekst |
-| `font_mono` | string | ja | Monospace font |
-| `image_background` | string\|null | nee | Bestandsnaam achtergrondafbeelding |
-| `image_header` | string\|null | nee | Bestandsnaam headerafbeelding (gereserveerd) |
-| `image_footer` | string\|null | nee | Bestandsnaam footerversiering (gereserveerd) |
-| `image_book_card_bg` | string\|null | nee | Achtergrond boekenkaart (gereserveerd) |
-| `corner_radius` | number | ja | Hoekafronding kaarten (aanbevolen: 8–20) |
-| `shadow_radius` | number | ja | Schaduwsterkte (aanbevolen: 0–10) |
+| `id` | string | yes | Unique identifier — lowercase letters, digits and hyphens only |
+| `name` | string | yes | Display name shown in the app |
+| `description` | string | yes | Short description |
+| `author` | string | yes | Your name |
 
-Kleuren als hex-string: `"#RRGGBB"` (met hekje, 6 cijfers).
+### Colors
 
----
+All color fields take a hex string: `"#RRGGBB"` (with `#`, six digits).
 
-## Afbeeldingen
-
-| Veld | Gebruik | Aanbevolen formaat |
+| Field | Required | Description |
 |---|---|---|
-| `image_background` | Vult het volledige startscherm | JPG, ≥ 1290 × 2800 px, < 3 MB |
-| `image_header` | Decoratie bovenaan (toekomstig) | PNG, transparantie mogelijk |
-| `image_footer` | Decoratie onderaan (toekomstig) | PNG, transparantie mogelijk |
+| `color_primary` | yes | Main accent color — section titles, highlights |
+| `color_secondary` | yes | Secondary accent |
+| `color_background` | yes | App background color |
+| `color_text` | yes | Default text color |
+| `color_accent` | yes | Interactive accent — buttons, links, toggles |
+| `color_muted` | yes | Muted color for captions and secondary text |
 
-Houd het hoofdmotief **gecentreerd** — randen worden bijgesneden op kleinere schermen.
+### Typography
+
+Use the **PostScript name** of the font (see [`fonts.md`](fonts.md) for the full list).
+
+| Field | Required | Description |
+|---|---|---|
+| `font_heading` | yes | Font used for headings |
+| `font_body` | yes | Font used for body text |
+| `font_mono` | yes | Monospace font |
+
+If a font name is not found, iOS falls back to the system font.
+
+### Images
+
+| Field | Type | Description |
+|---|---|---|
+| `image_background` | string \| null | Filename of the full-screen background image |
+| `image_header` | string \| null | Header decoration (reserved for future use) |
+| `image_footer` | string \| null | Footer decoration (reserved for future use) |
+| `image_book_card_bg` | string \| null | Book card background (reserved for future use) |
+
+#### Image guidelines
+
+| Field | Recommended size | Format | Max file size |
+|---|---|---|---|
+| `image_background` | ≥ 1290 × 2800 px | JPG | 3 MB |
+| `image_header` / `image_footer` | Any | PNG (transparency supported) | 1 MB |
+
+Keep the main subject **centered** — edges are cropped on smaller screens.
+
+### Shape
+
+| Field | Type | Required | Recommended range |
+|---|---|---|---|
+| `corner_radius` | number | yes | 8 – 20 |
+| `shadow_radius` | number | yes | 0 – 10 |
 
 ---
 
-## Beschikbare fonts
+## Tips
 
-Gebruik de **PostScript-naam** in `template.json`. Als een font niet gevonden wordt, valt iOS terug op het systeemfont.
-
-### Serif
-| PostScript-naam | Weergavenaam |
-|---|---|
-| `Georgia` | Georgia |
-| `Georgia-Bold` | Georgia Bold |
-| `Georgia-Italic` | Georgia Italic |
-| `Georgia-BoldItalic` | Georgia Bold Italic |
-| `TimesNewRomanPSMT` | Times New Roman |
-| `TimesNewRomanPS-BoldMT` | Times New Roman Bold |
-| `TimesNewRomanPS-ItalicMT` | Times New Roman Italic |
-| `Palatino-Roman` | Palatino |
-| `Palatino-Bold` | Palatino Bold |
-| `Palatino-Italic` | Palatino Italic |
-| `Baskerville` | Baskerville |
-| `Baskerville-Bold` | Baskerville Bold |
-| `Baskerville-Italic` | Baskerville Italic |
-| `Didot` | Didot |
-| `Didot-Bold` | Didot Bold |
-| `Didot-Italic` | Didot Italic |
-| `GillSans` | Gill Sans |
-| `GillSans-Bold` | Gill Sans Bold |
-| `GillSans-Italic` | Gill Sans Italic |
-| `AmericanTypewriter` | American Typewriter |
-| `AmericanTypewriter-Bold` | American Typewriter Bold |
-| `Cochin` | Cochin |
-| `Cochin-Bold` | Cochin Bold |
-| `Cochin-Italic` | Cochin Italic |
-
-### Sans-serif
-| PostScript-naam | Weergavenaam |
-|---|---|
-| `Avenir` | Avenir Book |
-| `Avenir-Medium` | Avenir Medium |
-| `Avenir-Heavy` | Avenir Heavy |
-| `Avenir-Black` | Avenir Black |
-| `Avenir-Oblique` | Avenir Oblique |
-| `AvenirNext-Regular` | Avenir Next |
-| `AvenirNext-Medium` | Avenir Next Medium |
-| `AvenirNext-DemiBold` | Avenir Next Demi Bold |
-| `AvenirNext-Bold` | Avenir Next Bold |
-| `HelveticaNeue` | Helvetica Neue |
-| `HelveticaNeue-Bold` | Helvetica Neue Bold |
-| `HelveticaNeue-Light` | Helvetica Neue Light |
-| `HelveticaNeue-Thin` | Helvetica Neue Thin |
-| `HelveticaNeue-Italic` | Helvetica Neue Italic |
-| `Futura-Medium` | Futura Medium |
-| `Futura-Bold` | Futura Bold |
-| `Futura-MediumItalic` | Futura Medium Italic |
-| `Optima-Regular` | Optima |
-| `Optima-Bold` | Optima Bold |
-| `Optima-Italic` | Optima Italic |
-| `TrebuchetMS` | Trebuchet MS |
-| `TrebuchetMS-Bold` | Trebuchet MS Bold |
-| `TrebuchetMS-Italic` | Trebuchet MS Italic |
-| `Verdana` | Verdana |
-| `Verdana-Bold` | Verdana Bold |
-| `Verdana-Italic` | Verdana Italic |
-| `ArialMT` | Arial |
-| `Arial-BoldMT` | Arial Bold |
-| `Arial-ItalicMT` | Arial Italic |
-| `Arial-BoldItalicMT` | Arial Bold Italic |
-
-### Monospace
-| PostScript-naam | Weergavenaam |
-|---|---|
-| `Menlo-Regular` | Menlo |
-| `Menlo-Bold` | Menlo Bold |
-| `Menlo-Italic` | Menlo Italic |
-| `CourierNewPSMT` | Courier New |
-| `CourierNewPS-BoldMT` | Courier New Bold |
-| `CourierNewPS-ItalicMT` | Courier New Italic |
-| `Courier` | Courier |
-| `Courier-Bold` | Courier Bold |
-
-### Kalligrafie / decoratief
-| PostScript-naam | Weergavenaam |
-|---|---|
-| `SnellRoundhand` | Snell Roundhand |
-| `SnellRoundhand-Bold` | Snell Roundhand Bold |
-| `Zapfino` | Zapfino |
-| `PartyLetPlain` | Party LET |
-| `ChalkboardSE-Regular` | Chalkboard SE |
-| `ChalkboardSE-Bold` | Chalkboard SE Bold |
-| `MarkerFelt-Thin` | Marker Felt Thin |
-| `MarkerFelt-Wide` | Marker Felt Wide |
-| `Papyrus` | Papyrus |
-| `Noteworthy-Light` | Noteworthy Light |
-| `Noteworthy-Bold` | Noteworthy Bold |
-
-### Kortschrift
-| PostScript-naam | Weergavenaam |
-|---|---|
-| `BradleyHandITCTT-Bold` | Bradley Hand |
-
-> **Tip:** voor de meeste lees-templates zijn `Georgia` (serif) of `Avenir` (sans-serif) als `font_body` een goede keuze. Decoratieve fonts werken beter als `font_heading`.
+- Use `Georgia` or `Baskerville` for a classic reading feel; `Avenir` or `Helvetica Neue` for a clean modern look.
+- Keep `color_background` light and `color_text` dark (or vice versa) for readable contrast.
+- Decorative fonts like `Zapfino` or `Noteworthy` work well for `font_heading` but are hard to read as body text.
+- The **Standard** template uses system colors and is not affected by `color_*` fields — only custom templates apply these values.

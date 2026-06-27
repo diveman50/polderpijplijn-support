@@ -1,8 +1,8 @@
 {
-  "id": "mijntemplate",
-  "name": "Mijn Template",
-  "description": "Omschrijving van je template",
-  "author": "Jouw naam",
+  "id": "my-template",
+  "name": "My Template",
+  "description": "A short description of your template",
+  "author": "Your Name",
 
   "color_primary":    "#C41E3A",
   "color_secondary":  "#0B6623",
@@ -13,7 +13,7 @@
 
   "font_heading": "Georgia",
   "font_body":    "Avenir",
-  "font_mono":    "Menlo",
+  "font_mono":    "Menlo-Regular",
 
   "image_background":   "background.jpg",
   "image_header":       null,
