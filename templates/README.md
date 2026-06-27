@@ -70,22 +70,14 @@ If a font name is not found, iOS falls back to the system font.
 
 ### Images
 
-| Field | Type | Description |
-|---|---|---|
-| `image_background` | string \| null | Full-screen background image on the home screen |
-| `image_header` | string \| null | Header decoration (reserved for future use) |
-| `image_footer` | string \| null | Footer decoration (reserved for future use) |
-| `image_book_card_bg` | string \| null | Background image on the book detail screen |
+| Field | Type | Recommended size | Format | Max | Description |
+|---|---|---|---|---|---|
+| `image_background` | string \| null | ≥ 1290 × 2800 px | JPG | 3 MB | Full-screen background on the home screen |
+| `image_book_card_bg` | string \| null | ≥ 1290 × 900 px | JPG | 1 MB | Top card on the book detail screen (cover + title + author) |
+| `image_header` | string \| null | any | PNG | 1 MB | Header decoration (reserved for future use) |
+| `image_footer` | string \| null | any | PNG | 1 MB | Footer decoration (reserved for future use) |
 
-#### Image guidelines
-
-| Field | Recommended size | Format | Max file size |
-|---|---|---|---|
-| `image_background` | ≥ 1290 × 2800 px | JPG | 3 MB |
-| `image_book_card_bg` | ≥ 1290 × 900 px | JPG | 1 MB |
-| `image_header` / `image_footer` | Any | PNG (transparency supported) | 1 MB |
-
-`image_book_card_bg` fills only the top section of the book detail screen (cover + title + author). The section is roughly 430 pt tall on iPhone; on iPad it spans the full width. Keep the main subject **centered** — edges are cropped on smaller screens and on iPad the width is much larger.
+Keep the main subject **centered** — edges are cropped on smaller screens. `image_background` should be tall enough to cover the longest iPhone screen; `image_book_card_bg` fills a strip of roughly 430 pt on iPhone and spans the full width on iPad.
 
 ### Shape
 
