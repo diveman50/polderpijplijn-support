@@ -82,9 +82,10 @@ If a font name is not found, iOS falls back to the system font.
 | Field | Recommended size | Format | Max file size |
 |---|---|---|---|
 | `image_background` | ≥ 1290 × 2800 px | JPG | 3 MB |
+| `image_book_card_bg` | ≥ 1290 × 900 px | JPG | 1 MB |
 | `image_header` / `image_footer` | Any | PNG (transparency supported) | 1 MB |
 
-Keep the main subject **centered** — edges are cropped on smaller screens.
+`image_book_card_bg` fills only the top section of the book detail screen (cover + title + author). The section is roughly 430 pt tall on iPhone; on iPad it spans the full width. Keep the main subject **centered** — edges are cropped on smaller screens and on iPad the width is much larger.
 
 ### Shape
 
