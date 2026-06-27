@@ -1,0 +1,25 @@
+{
+  "id": "mijntemplate",
+  "name": "Mijn Template",
+  "description": "Omschrijving van je template",
+  "author": "Jouw naam",
+
+  "color_primary":    "#C41E3A",
+  "color_secondary":  "#0B6623",
+  "color_background": "#FFF8DC",
+  "color_text":       "#2C2C2C",
+  "color_accent":     "#FFD700",
+  "color_muted":      "#8B7355",
+
+  "font_heading": "Georgia",
+  "font_body":    "Avenir",
+  "font_mono":    "Menlo",
+
+  "image_background":   "background.jpg",
+  "image_header":       null,
+  "image_footer":       null,
+  "image_book_card_bg": null,
+
+  "corner_radius": 16,
+  "shadow_radius": 6
+}
