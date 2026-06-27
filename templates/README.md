@@ -72,10 +72,10 @@ If a font name is not found, iOS falls back to the system font.
 
 | Field | Type | Description |
 |---|---|---|
-| `image_background` | string \| null | Filename of the full-screen background image |
+| `image_background` | string \| null | Full-screen background image on the home screen |
 | `image_header` | string \| null | Header decoration (reserved for future use) |
 | `image_footer` | string \| null | Footer decoration (reserved for future use) |
-| `image_book_card_bg` | string \| null | Book card background (reserved for future use) |
+| `image_book_card_bg` | string \| null | Background image on the book detail screen |
 
 #### Image guidelines
 
