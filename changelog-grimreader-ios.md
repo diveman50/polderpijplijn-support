@@ -3,6 +3,40 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.51 — 2026-06-28
+
+- **Achtergrondafbeelding op de boekdetailpagina:** `image_book_card_bg` in het template vult nu de bovenste kaart (omslag + titel + auteur) op de detailpagina. Aanbevolen afmeting: ≥ 1290 × 900 px.
+
+## 2.5 — 2026-06-27
+
+- **Commentaar in template-JSON:** je kunt nu `//` en `/* */` commentaar in `template.json` zetten; de app negeert dit netjes bij het inlezen.
+- **Template verwijderen schakelt direct terug naar Standaard:** als je het actieve template verwijdert, springt de app meteen naar het Standaard-template.
+
+## 2.4 — 2026-06-27
+
+- **Transparantie van boekenkaarten instelbaar:** voeg `"card_opacity"` (0.0–1.0) toe aan je template om de secties "Lees verder", "Recent toegevoegd" enz. doorzichtig te maken zodat een achtergrondafbeelding doorschijnt.
+- **Templates verwijderen:** in Instellingen verschijnt een verwijderknop zodra je een zelfgemaakt template selecteert. Ingebouwde templates kunnen niet verwijderd worden.
+- **Kerst-template verwijderd:** het ingebouwde kerstthema is uit de app gehaald.
+
+## 2.3 — 2026-06-27
+
+- **Achtergrondafbeelding van geïmporteerde templates werkt nu correct:** na het importeren toonde de achtergrondafbeelding soms niet. Dit is verholpen.
+- **Vorig gekozen template wordt onthouden:** de app herinnert na herstarten welk template je had geselecteerd.
+
+## 2.2 — 2026-06-27
+
+- **Templates importeren via .grimtemplate-bestanden:** deel een `.grimtemplate`-bestand via AirDrop, Mail of de Bestanden-app, of gebruik de importknop in Instellingen → Weergave. Het bestand is een gewone zip met een `template.json` en optionele afbeeldingen.
+- **OpenDyslexic-ondersteuning:** stel `"font_body": "opendyslexic"` in om het ingebouwde OpenDyslexic-lettertype in te schakelen — de EPUB-lezer schakelt automatisch mee.
+- **Meerdere templates:** je kunt meerdere templates installeren en via de picker in Instellingen wisselen.
+
+## 2.1 — 2026-06-27
+
+- **Achtergrondafbeelding in templates:** voeg `"image_background"` toe aan je template voor een eigen foto of illustratie als achtergrond van het startscherm. Aanbevolen afmeting: ≥ 1290 × 2800 px.
+
+## 2.0 — 2026-06-27
+
+- **Templates passen nu de volledige app-stijl aan:** kleuren, lettertypen, hoekradius en slagschaduw uit het template worden toegepast in het startscherm en de boekdetailpagina. Het Standaard-template blijft het systeem-uiterlijk volgen (inclusief donkere modus).
+
 ## 1.98 — 2026-06-26
 
 - **Onderhoud opgeschoond:** de opties "Boeken zonder auteur aanvullen" en "Boeken
