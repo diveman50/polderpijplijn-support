@@ -3,6 +3,10 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.52 — 2026-06-30
+
+- **Cover bij geïmporteerde boeken:** EPUB's die je via "Open met…" of AirDrop importeert tonen nu hun ingebedde omslag (plus titel en auteur uit het bestand) in de bibliotheek, net als bij WebDAV. Voorheen bleef de cover leeg.
+
 ## 2.51 — 2026-06-28
 
 - **Achtergrondafbeelding op de boekdetailpagina:** `image_book_card_bg` in het template vult nu de bovenste kaart (omslag + titel + auteur) op de detailpagina. Aanbevolen afmeting: ≥ 1290 × 900 px.
@@ -37,7 +41,7 @@ Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
 - **Templates passen nu de volledige app-stijl aan:** kleuren, lettertypen, hoekradius en slagschaduw uit het template worden toegepast in het startscherm en de boekdetailpagina. Het Standaard-template blijft het systeem-uiterlijk volgen (inclusief donkere modus).
 
-## 1.98 — 2026-06-26
+## 1.98 — 2026-06-26 *(eerste App Store-release)*
 
 - **Onderhoud opgeschoond:** de opties "Boeken zonder auteur aanvullen" en "Boeken
   zonder cover aanvullen" zijn verwijderd (werkten nog niet betrouwbaar).
