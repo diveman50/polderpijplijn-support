@@ -3,6 +3,10 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.57 — 2026-06-30
+
+- **Bladeren alleen via swipe:** een tik ergens op de pagina liet altijd óf direct naar de vorige/volgende pagina springen, óf (op video-pagina's) de bedieningsbalk opspringen — allebei voelde onvoorspelbaar, vooral als je een verkennende tik deed op een pagina met video. Tikken doet nu niets meer behalve de onderste strook die de balk opent; bladeren gaat voortaan uitsluitend via swipe.
+
 ## 2.56 — 2026-06-30
 
 - **`navigator.epubReadingSystem` toegevoegd:** boeken met eigen scripts (EPUB3 "scripted content") kunnen nu detecteren wat de lezer ondersteunt, zoals de spec voorschrijft. Gemeld als geen muis-events (een touch-toestel heeft er geen), zodat scripts die daarop letten netjes terugvallen op native bediening.
