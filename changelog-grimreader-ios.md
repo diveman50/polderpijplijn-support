@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.53 — 2026-06-30
+
+- **Elegantere offline-weergave:** zonder internetverbinding verbergt de app nu tabs en secties die een server nodig hebben (Start, Alle boeken, Series, Schrijvers, Favorieten, Zoeken, Servers en Internet boeken) in plaats van overal losse "Kan niet laden"-foutmeldingen te tonen. "Mijn boeken" en Instellingen blijven gewoon werken; zodra de verbinding terugkomt, verschijnen de andere tabs vanzelf weer.
+- **Achtergrondafbeelding ook bij geïmporteerde boeken:** de template-instelling `image_book_card_bg` werkte al op de detailpagina van serverboeken, maar niet bij boeken die je zelf importeert of download. Dat is nu gelijkgetrokken.
+
 ## 2.52 — 2026-06-30
 
 - **Cover bij geïmporteerde boeken:** EPUB's die je via "Open met…" of AirDrop importeert tonen nu hun ingebedde omslag (plus titel en auteur uit het bestand) in de bibliotheek, net als bij WebDAV. Voorheen bleef de cover leeg.
