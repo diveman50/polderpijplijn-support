@@ -3,6 +3,10 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.54 — 2026-06-30
+
+- **EPUB3 Media Overlays (voorlezing met echte audio):** boeken die per pagina een ingesproken audiospoor + SMIL-synchronisatie bevatten (zoals Grim-books die genereert) tonen nu een "Voorlezing afspelen"-knop met de eigen audio van het boek, in plaats van alleen de robotstem-voorleesfunctie. Speelt automatisch door naar de volgende pagina als die ook audio heeft, met pauzeren en vorig/volgend fragment.
+
 ## 2.53 — 2026-06-30
 
 - **Elegantere offline-weergave:** zonder internetverbinding verbergt de app nu tabs en secties die een server nodig hebben (Start, Alle boeken, Series, Schrijvers, Favorieten, Zoeken, Servers en Internet boeken) in plaats van overal losse "Kan niet laden"-foutmeldingen te tonen. "Mijn boeken" en Instellingen blijven gewoon werken; zodra de verbinding terugkomt, verschijnen de andere tabs vanzelf weer.
