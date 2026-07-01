@@ -3,6 +3,9 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 4.80 — 2026-07-01
+- New "Analyses" tab: the savings analysis, home battery capacity advice and heat pump exploration cards moved off the home screen (which had grown to 12+ tiles) into their own tab, with a disclaimer at the top that these are indicative model-based calculations, not guarantees.
+
 ## 4.79 — 2026-07-01
 - Fixed the remaining case of the "app jumps to the setup screen" bug from 4.78: that fix covered later iCloud sync notifications, but the very first read on a cold launch could still momentarily treat an empty iCloud value as real and wipe the locally cached host/token. Mostly noticeable on iPhone, since iOS terminates suspended apps there far more aggressively than on iPad, so closing and reopening the app tends to force a real cold launch (and hit this window) sooner.
 - "Expected today" on the solar tile and detail screen now stays pinned for the whole day instead of drifting with every new weather forecast — the accuracy graph already used a frozen daily total, but the headline number next to it was still recalculated live on each refresh.
