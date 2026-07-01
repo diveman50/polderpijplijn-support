@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.60 — 2026-07-01
+
+- **De app is niet meer kaal zonder Grimmory-server:** Start (Lees verder/Recent toegevoegd) en Schrijvers vullen zich nu met je eigen lokaal geïmporteerde of via WebDAV gedownloade boeken, ook zonder serververbinding. Series blijft voorlopig leeg — dat vraagt nog nieuwe metadata die nog niet uit boeken gelezen wordt.
+- **Boeken toevoegen via bestandskiezer:** een "+"-knop in "Mijn boeken" opent de Bestanden-app als alternatief voor "Open met…".
+
 ## 2.59 — 2026-07-01
 
 - **Bug uit 2.58 hersteld: bladeren via swipe deed het niet meer.** De vorige release liet tikken op knoppen/video-bediening in de pagina doorvallen naar de webweergave, maar die wijziging blokkeerde per ongeluk ook de swipe-gesture zelf. Bladeren werkt weer; knoppen/video-bediening in de pagina zijn (net als vóór 2.58) bereikbaar na het openen van de bedieningsbalk.
