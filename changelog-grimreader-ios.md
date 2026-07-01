@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.71 — 2026-07-02
+
+- **De leesweergave geeft de audiobesturing niet meer uit handen.** De ingebouwde webweergave kreeg altijd rechten om media automatisch af te spelen (voor video's in EPUB's), en claimde daarmee het audiosessiebeheer van de app — met als gevolg dat iOS de audio bij het verlaten van de app uitschakelde. Die rechten gelden nu alleen nog voor boeken die daadwerkelijk video of audio bevatten.
+- **Voorlezen heeft nu bediening op het toegangsscherm**: afspelen/pauzeren en zin vooruit/terug, net als de audioboekspeler.
+
 ## 2.70 — 2026-07-01
 
 - **Voorlezen fundamenteel herbouwd voor betrouwbaar doorspelen op de achtergrond.** Zes pogingen om de live spraakmotor op de achtergrond aan de praat te houden strandden op hetzelfde iOS-gedrag: de volgende zin start simpelweg niet meer, hoe correct de audio-instellingen ook staan. Het voorlezen rendert de zinnen nu vooraf als kleine audiofragmenten en speelt die naadloos af via dezelfde afspeeltechniek als audioboeken — die aantoonbaar wél feilloos doorspelen. Bediening, zin-oplichting, hoofdstukdoorloop en snelheid werken zoals voorheen.
