@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.58 — 2026-07-01
+
+- **Knoppen/links in de paginatekst weer aantikbaar:** de vorige swipe-only-wijziging blokkeerde per ongeluk óók gewone knoppen, video-bediening en links in de pagina zelf, niet alleen het bladeren. Tikken vallen nu door naar de webweergave; swipen blijft gewoon werken om te bladeren.
+- **`<epub:trigger>` ondersteund:** boeken die knoppen declaratief koppelen aan acties (afspelen/pauzeren/dempen van video of audio, zonder eigen script) deden voorheen niets — geen enkele browser-engine interpreteert dit uit zichzelf. Grim Reader bekabelt dit nu zelf (play/resume/pause/stop/mute/unmute/show/hide).
+
 ## 2.57 — 2026-06-30
 
 - **Bladeren alleen via swipe:** een tik ergens op de pagina liet altijd óf direct naar de vorige/volgende pagina springen, óf (op video-pagina's) de bedieningsbalk opspringen — allebei voelde onvoorspelbaar, vooral als je een verkennende tik deed op een pagina met video. Tikken doet nu niets meer behalve de onderste strook die de balk opent; bladeren gaat voortaan uitsluitend via swipe.
