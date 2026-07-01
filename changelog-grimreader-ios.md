@@ -3,6 +3,10 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.63 — 2026-07-01
+
+- **Voorlezen speelt weer betrouwbaar door op de achtergrond.** De lockscreen-bediening uit 2.62 bleek de achtergrond-audio te verstoren (het voorlezen stopte zodra je naar het beginscherm ging); die toevoeging is teruggedraaid. Het voorlezen loopt nu weer ononderbroken door op de achtergrond en met het scherm op slot, zoals in 2.61.
+
 ## 2.62 — 2026-07-01
 
 - **Voorlezen heeft nu bediening op het toegangsscherm en in Bedieningspaneel.** Titel, auteur en omslag van het boek verschijnen in het "speelt nu"-paneel, met knoppen voor afspelen/pauzeren en de vorige/volgende zin — ook met het scherm op slot. Voorheen had alleen de audioboek-speler dit.
