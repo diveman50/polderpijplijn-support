@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.59 — 2026-07-01
+
+- **Bug uit 2.58 hersteld: bladeren via swipe deed het niet meer.** De vorige release liet tikken op knoppen/video-bediening in de pagina doorvallen naar de webweergave, maar die wijziging blokkeerde per ongeluk ook de swipe-gesture zelf. Bladeren werkt weer; knoppen/video-bediening in de pagina zijn (net als vóór 2.58) bereikbaar na het openen van de bedieningsbalk.
+- **Taal, leeftijdscategorie, uitgever, datum en beschrijving** uit het boek zelf worden nu gelezen en getoond bij geïmporteerde/WebDAV-boeken, inclusief boeken die de nieuwere `dcterms:`-metadatavorm gebruiken in plaats van de klassieke `dc:*`-elementen.
+
 ## 2.58 — 2026-07-01
 
 - **Knoppen/links in de paginatekst weer aantikbaar:** de vorige swipe-only-wijziging blokkeerde per ongeluk óók gewone knoppen, video-bediening en links in de pagina zelf, niet alleen het bladeren. Tikken vallen nu door naar de webweergave; swipen blijft gewoon werken om te bladeren.
