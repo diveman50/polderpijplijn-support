@@ -3,6 +3,12 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.64 — 2026-07-01
+
+- **Audioboeken spelen door als je de speler sluit.** Het spelerscherm sluiten stopt het afspelen niet meer: je kunt verder bladeren door je bibliotheek terwijl het boek doorloopt, met bediening op het toegangsscherm. Het boek opnieuw openen koppelt weer aan de lopende weergave, op de juiste positie.
+- **Ingesproken boeken (zoals van Grim Books) spelen betrouwbaarder door met het scherm op slot**, en pauzeren nu netjes bij een telefoontje of Siri — met automatisch hervatten na afloop. Voorheen bleef de voorlezing na zo'n onderbreking stil hangen.
+- **Veiligheid en stabiliteit:** een kwaadaardig EPUB-bestand kan niet langer bestanden buiten zijn eigen cache-map schrijven; twee verschillende boeken met dezelfde bestandsnaam tonen niet langer elkaars inhoud; en de app declareert nu een privacy-manifest (geen tracking, geen dataverzameling).
+
 ## 2.63 — 2026-07-01
 
 - **Voorlezen speelt weer betrouwbaar door op de achtergrond.** De lockscreen-bediening uit 2.62 bleek de achtergrond-audio te verstoren (het voorlezen stopte zodra je naar het beginscherm ging); die toevoeging is teruggedraaid. Het voorlezen loopt nu weer ononderbroken door op de achtergrond en met het scherm op slot, zoals in 2.61.
