@@ -3,6 +3,10 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.72 — 2026-07-02
+
+- **Diagnoseregel uit het voorleespaneel verwijderd** — het achtergrond-onderzoek is afgerond. Eindstand: voorlezen speelt door met het scherm op slot, met bediening op het toegangsscherm; alleen naar het beginscherm navigeren stopt het nog, door een bekende WebKit-beperking waarvoor geen nette oplossing bestaat. Audioboeken spelen overal door, ook op het beginscherm.
+
 ## 2.71 — 2026-07-02
 
 - **De leesweergave geeft de audiobesturing niet meer uit handen.** De ingebouwde webweergave kreeg altijd rechten om media automatisch af te spelen (voor video's in EPUB's), en claimde daarmee het audiosessiebeheer van de app — met als gevolg dat iOS de audio bij het verlaten van de app uitschakelde. Die rechten gelden nu alleen nog voor boeken die daadwerkelijk video of audio bevatten.
