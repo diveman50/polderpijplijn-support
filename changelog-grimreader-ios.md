@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.65 — 2026-07-01
+
+- **Voorlezen na een audioboek werkt weer op de achtergrond.** In 2.64 stopte het voorlezen op de achtergrond (na de lopende zin, en de app kon zelfs afgesloten worden) als er eerder in dezelfde sessie een audioboek had gespeeld — de audiosessie-wissel tussen de twee kon stilletjes mislukken. De overdracht houdt de sessie nu actief.
+- **De EPUB-lezer sluiten stopt een op de achtergrond spelend audioboek niet meer**: opruim-stops laten de audiosessie voortaan met rust als ze zelf niets afspeelden.
+
 ## 2.64 — 2026-07-01
 
 - **Audioboeken spelen door als je de speler sluit.** Het spelerscherm sluiten stopt het afspelen niet meer: je kunt verder bladeren door je bibliotheek terwijl het boek doorloopt, met bediening op het toegangsscherm. Het boek opnieuw openen koppelt weer aan de lopende weergave, op de juiste positie.
