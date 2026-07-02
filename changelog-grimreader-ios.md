@@ -3,6 +3,13 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.73 — 2026-07-02
+
+- **Voorlezen speelt nu ook op de iPad door na het wegvegen naar het beginscherm.** De leesweergave (webweergave) wordt tijdens achtergrond-voorlezen tijdelijk geparkeerd, zodat iPadOS de audio niet meer meetrekt bij het slapend maken van die weergave — op de iPhone werkte dit al. Bij terugkeer bouwt de pagina zich opnieuw op.
+- **Engelse vertaling gerepareerd:** ruim honderd teksten (waaronder de voorleesknop, vertalen, catalogi en zoeken) toonden in de Engelse interface nog Nederlands.
+- **Voorlezen toont boektitel, auteur en omslag op het toegangsscherm**, net als de audioboekspeler.
+- **De voorleesknop rekt niet meer uit** zodra het voorlezen speelt: tijdens het afspelen toont hij alleen het stop-icoon.
+
 ## 2.72 — 2026-07-02
 
 - **Diagnoseregel uit het voorleespaneel verwijderd** — het achtergrond-onderzoek is afgerond. Eindstand: voorlezen speelt door met het scherm op slot, met bediening op het toegangsscherm; alleen naar het beginscherm navigeren stopt het nog, door een bekende WebKit-beperking waarvoor geen nette oplossing bestaat. Audioboeken spelen overal door, ook op het beginscherm.
