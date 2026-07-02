@@ -3,6 +3,11 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 2.74 — 2026-07-02
+
+- **Tekst en bediening vallen op de iPhone niet meer weg aan de zijkanten tijdens het voorlezen.** De bedieningsrij was met zes knoppen breder dan het scherm en rekte daardoor de hele leesweergave op; de weergave-knop (AA) wijkt nu zolang het voorlezen speelt.
+- Het parkeren van de leesweergave bij achtergrond-voorlezen (2.73) is teruggedraaid: het loste het iPad-beginscherm-geval niet op en veroorzaakte alleen een onnodige pagina-heropbouw bij terugkeer. Eindstand: audioboeken spelen overal door op iPhone en iPad; voorlezen speelt op de iPhone overal door en op de iPad in de app en met het scherm op slot.
+
 ## 2.73 — 2026-07-02
 
 - **Voorlezen speelt nu ook op de iPad door na het wegvegen naar het beginscherm.** De leesweergave (webweergave) wordt tijdens achtergrond-voorlezen tijdelijk geparkeerd, zodat iPadOS de audio niet meer meetrekt bij het slapend maken van die weergave — op de iPhone werkte dit al. Bij terugkeer bouwt de pagina zich opnieuw op.
