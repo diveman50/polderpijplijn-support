@@ -3,6 +3,9 @@
 All notable changes per release. Newest first.
 Versions match the `vX.Y` tags and `CFBundleShortVersionString`.
 
+## 4.83 — 2026-07-02
+- Solar forecast fixes from a code review: the dashboard could freeze "expected today" for the whole day based on yesterday's cached weather forecast when the fresh fetch happened to fail at first open — freezing now only happens on a fresh forecast (as the solar screen already did), which also keeps the accuracy graph honest. And the fallback estimate shown just after midnight now includes the remainder of the current hour pro rata, instead of skipping up to a full peak hour.
+
 ## 4.82 — 2026-07-01
 - Moved the ventilation-tip sensor picker from Settings to the Climate screen, so everything climate-related lives in one place. The picker also now only offers sensors the Climate screen already recognises and shows, instead of every Celsius entity in Home Assistant.
 
